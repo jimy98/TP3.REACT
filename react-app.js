@@ -17,12 +17,12 @@ function App() {
         const nuevaFila = { ...inputs, imc: imcCalculado, id: Date.now() };
         setLista([...lista, nuevaFila]);
         
-        // Reset manual del estado del formulario
+    
         setInputs({ nombre: '', apellido: '', edad: '', altura: '', peso: '' });
     };
 
     const borrarFila = (id) => {
-        setLista(lista.filter(item => item.id !== id));
+        setLista(lista.filter(item => item.id !== id)); 
     };
 
     return (
