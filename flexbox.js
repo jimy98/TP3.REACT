@@ -36,5 +36,4 @@ btnFiltrar.addEventListener('click', () => {
     btnFiltrar.textContent = estadoFiltro ? "Quitar Resaltado" : "Resaltar Componentes Críticos";
 });
 
-// Carga inicial
-renderCards();
+renderCards(); 
