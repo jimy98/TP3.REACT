@@ -31,4 +31,4 @@ form.addEventListener('submit', function(e) {
 
     tbody.appendChild(fila);
     form.reset();
-});
+});  
