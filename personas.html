@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Personas - Vanilla JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="index.html" class="btn-nav btn-back">← Volver al Inicio</a>
+    
+    <div class="workspace">
+        <h2>Registro de Métricas de Personas (DOM)</h2>
+        
+        <form id="formPersonas">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <input type="number" id="altura" placeholder="Altura (ej: 1.75)" step="0.01" required>
+            <input type="number" id="peso" placeholder="Peso (kg)" required>
+            <button type="submit">Agregar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>IMC</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyPersonas"></tbody>
+        </table>
+    </div>
+
+    <script src="personas.js"></script>
+</body>
+</html>
