@@ -10,7 +10,6 @@ form.addEventListener('submit', function(e) {
     const altura = parseFloat(document.getElementById('altura').value);
     const peso = parseFloat(document.getElementById('peso').value);
 
-    // Cálculo matemático del Índice de Masa Corporal
     const imc = (peso / (altura * altura)).toFixed(2);
 
     const fila = document.createElement('tr');
@@ -24,11 +23,9 @@ form.addEventListener('submit', function(e) {
         <td><button class="btn btn-borrar">Quitar</button></td>
     `;
 
-    // Manejador del botón eliminar de la fila creada
     fila.querySelector('.btn-borrar').addEventListener('click', () => {
         fila.remove();
     });
-
     tbody.appendChild(fila);
-    form.reset();
+    form.reset();    
 });  
